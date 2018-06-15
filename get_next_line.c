@@ -6,7 +6,7 @@
 /*   By: mmakatsh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/08 10:05:50 by mmakatsh          #+#    #+#             */
-/*   Updated: 2018/06/15 08:23:45 by mmakatsh         ###   ########.fr       */
+/*   Updated: 2018/06/15 13:19:35 by mmakatsh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int	get_next_line(const int fd, char **line)
 {
-	static char	*c[2147483647];
+	static char	*c[MAX_FD];
 	char		buffer[BUFF_SIZE + 1];
 	char		*tmp;
 	ssize_t		b;
